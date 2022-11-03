@@ -1,7 +1,5 @@
 package com.code4community.hub.entities;
 
-//package com.tericcabrel.blog.entities;
-
 import java.util.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity;
