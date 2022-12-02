@@ -17,12 +17,13 @@ USE COMMAND BELOW TO SELECT SPECIFIC ITEMS
 AND GET BACK ALL OF THEIR LOCATIONS
 ---------------------------------------------
 
-SELECT items.type, locations.name FROM items
-JOIN locations on items.location_id = locations.location_id
-WHERE items.type = 'Wastebasket';
+SELECT resources.type, locations.name FROM resources
+JOIN locations on resources.location_id = locations.location_id
+WHERE resources.type = 'Wastebasket';
 
-ALTER TABLE items
+ALTER TABLE resources
 ADD FOREIGN KEY (location_id) REFERENCES locations(location_id);
 
 */
+
 
