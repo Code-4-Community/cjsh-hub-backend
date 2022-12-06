@@ -1,4 +1,4 @@
-CREATE TABLE dummy_data
+CREATE TABLE locations
 (
     id        BIGINT       NOT NULL,
     name      VARCHAR(100) NOT NULL,
@@ -8,7 +8,7 @@ CREATE TABLE dummy_data
     PRIMARY KEY (id)
 );
 
-INSERT INTO dummy_data (id, name, latitude, longitude)
+INSERT INTO locations (id, name, latitude, longitude)
 VALUES (1, 'ISEC', '92.30.43.21', '34.56.74.21'),
        (2, 'Snell', '92.33.42.20', '32.56.77.19'),
        (3, 'Behrakis', '90.31.41.10', '29.56.43.19'),
@@ -20,6 +20,8 @@ VALUES (1, 'ISEC', '92.30.43.21', '34.56.74.21'),
        (9, 'Mugar Life Sciences Building', '96.31.41.10', '49.56.43.19'),
        (10, 'Curry Student Center', '32.31.41.10', '13.56.46.19');
 
-UPDATE dummy_data
+UPDATE locations
 SET name = 'Hayden Center'
 WHERE id = 4;
+
+
