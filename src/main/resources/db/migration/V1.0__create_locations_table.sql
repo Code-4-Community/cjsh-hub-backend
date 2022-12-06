@@ -1,11 +1,11 @@
 CREATE TABLE locations
 (
-    id        BIGINT       NOT NULL,
+    location_id        BIGINT       NOT NULL,
     name      VARCHAR(100) NOT NULL,
     latitude  VARCHAR(100) NOT NULL,
     longitude VARCHAR(100) NOT NULL,
 
-    PRIMARY KEY (id)
+    PRIMARY KEY (location_id)
 );
 
 
